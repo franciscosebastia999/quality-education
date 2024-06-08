@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+        <title>Student/ Parents Registration</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/index.js"></script>
+    </head>
+    <body>
+        <div class="navbar" style="border: solid #00a8ff; padding: 5% 15%;">
+            <a href=""><img src="assets/logo.png" alt="Logo"></a>
+            <a class="links" href="index.html">Home</a>
+            <a class="links" href="about.html">About</a>
+            <button><a href="donation.html" style="text-decoration: none;">Donate</a></button>
+        </div>
+        <div class="schoolContent">
+            <h1 style="color: #8c7ae6; text-align: center; margin-top: 100px;">Find your perfect School </h1>
+    <p style= "text-align: center; color: #2f3640; font-weight: 100;">Let us help you narrow down your search for the right school!</p>
+
+    <form action="submit.php" method="post" style= "padding: 5% 35%; color: #2f3640;">  
+        <label for="student_grade" style="font-weight: 100;">Student's Grade Level:</label>
+        <select name="student_grade" id="student_grade">
+            <option value="">Select Grade </option>
+            <option value="elementary">Elementary School</option>
+            <option value="middle">Middle School</option>
+            <option value="high">High School</option>
+        </select>
+
+        <label for="location" style="font-weight: 100;">Desired Location:</label>
+        <input type="text" name="location" id="location" placeholder="City, State, or Zip Code">
+
+        <label for="programs" style="font-weight: 100;">Programs of Interest (optional):</label>
+        <input type="text" name="programs" id="programs" placeholder="e.g. STEM, Arts, Language Immersion">
+
+        <label for="class_size" style="font-weight: 100;">Preferred Class Size (optional):</label>
+        <select name="class_size" id="class_size">
+            <option value=""> Select Size</option>
+            <option value="small">Small (less than 20 students)</option>
+            <option value="medium">Medium (20-30 students)</option>
+            <option value="large">Large (more than 30 students)</option>
+        </select>
+
+        <label for="extracurriculars" style="font-weight: 100;">Extracurricular Activities (optional):</label>
+        <textarea name="extracurriculars" id="extracurriculars" rows="4" placeholder="e.g. Sports, Clubs, Arts" ></textarea>
+
+        <button type="submit" style="border: none; background-color: #8c7ae6; padding: 5% 30%;font-weight: 100; color: white;">Find Schools!</button>
+    </form>
+
+    <p style= "text-align: center; color: #2f3640; font-weight: 100;">**Note:** By submiting this form you agree to the T&Cs.</p>
+        </div>
+        <div class="footer" style="text-align: center; padding: 5% 35%;">
+            <p style="color: #2f3640; font-weight: 100; font-size: small;">&copy 2024 CISA G9 Students.</p>
+        </div>
+    </body>
+</html>
